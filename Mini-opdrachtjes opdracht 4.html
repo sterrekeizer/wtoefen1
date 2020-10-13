@@ -1,0 +1,15 @@
+<script> 
+    
+    function deFunctie(Letter){
+    var woord = "U heeft op " + Letter + " gedrukt <br>";
+        document.getElementById("uitkomst").innerHTML += "U heeft op " + Letter + " gedrukt <br>"; 
+       
+    }
+    
+    </script>
+    
+    <input type="button" id="KnopA" value="A" onclick ="deFunctie('A')">
+    <input type="button" id="KnopB" value="B" onclick ="deFunctie('B')">
+    <input type="button" id="KnopC" value="C" onclick ="deFunctie('C')">
+    <input type="button" id="KnopD" value="D" onclick ="deFunctie('D')">
+    <div><h1 id=uitkomst></h1></div>
