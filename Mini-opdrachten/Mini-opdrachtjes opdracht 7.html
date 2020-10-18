@@ -1,0 +1,67 @@
+<script> 
+var countA = 0;
+var countB =0;
+
+function deFunctie(){
+    countA++;
+    if (countA == 1){
+        document.getElementById('AFBA').src = 'winter.jpg'
+        
+    }
+    else if (countA == 2){
+        document.getElementById('AFBA').src = 'lente.jpg'   
+        
+    }
+    else if (countA == 3){ 
+        document.getElementById('AFBA').src = 'zomer.jpg'
+        
+    }
+    else if(countA ==4){ 
+        document.getElementById('AFBA').src = 'herfst.jpg'
+        countA=0;
+    }
+}
+
+function deFunctie2(){  
+    countB++
+    if (countB == 1){
+        document.getElementById('AFBB').src = 'winter.jpg'
+        
+    }
+    else if (countB == 2){
+        document.getElementById('AFBB').src = 'lente.jpg'   
+        
+    }
+    else if (countB == 3){ 
+        document.getElementById('AFBB').src = 'zomer.jpg'
+        
+    }
+    else if(countB ==4){ 
+        document.getElementById('AFBB').src = 'herfst.jpg'
+        countB=0;
+        
+    }
+}
+
+function deFunctie3(){ 
+    if (countA == countB){ 
+        console.log('Ze zijn hetzelfde')
+    }
+    else {
+        console.log("Ze zijn niet hetzelfde")
+
+    }
+}
+</script>
+
+<img id="AFBA" src="plaatje1.jpg" width="300" height="300">
+<br>
+<input type="button" id="KNA" value="A" onclick ="deFunctie()">
+<br>
+<img id="AFBB" src="plaatje2.jpg" width="300" height="300">
+<br>
+<input type="button" id="KNB" value="B" onclick ="deFunctie2()">
+<br>
+<br>
+<br>
+<input type="button" id="KNC" value="C" onclick ="deFunctie3()">
