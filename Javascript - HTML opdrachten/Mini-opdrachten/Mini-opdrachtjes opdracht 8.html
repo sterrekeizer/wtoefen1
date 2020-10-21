@@ -1,0 +1,37 @@
+<script>
+
+var countA = 0;
+function functieA(){  
+    countA++
+    console.log(countA)
+    if (countA == 1){
+        document.getElementById('AFBA').src = 'winter.jpg'
+        
+    }
+    else if (countA == 2){
+        document.getElementById('AFBA').src = 'lente.jpg'   
+        
+    }
+    else if (countA == 3){ 
+        document.getElementById('AFBA').src = 'zomer.jpg'
+        
+    }
+    else if(countA ==4){ 
+        document.getElementById('AFBA').src = 'herfst.jpg'
+        countA=0;
+    }
+
+    if (countA == 2){ 
+        document.getElementById('AFBB').src = 'lammetjes.jpg'
+    }
+    else {
+        document.getElementById('AFBB').src = 'schaap.jpg'
+
+    }
+}
+</script>
+
+<img id="AFBA" src="herfst.jpg" width="300" height="300" onclick= "functieA()">
+<br>
+<br>
+<img id="AFBB" src ="schaap.jpg" width="300" height="300" onclick = "functieB()">

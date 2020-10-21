@@ -1,0 +1,11 @@
+
+public class MiniOpdracht3 {
+		// TEL HET ARRAY OP
+		//Berekend de som van alle array elementen.
+		//Voorbeeld: voor een gegeven array {1, 2, 3, 4} wordt de som hiervan: 1 + 2 + 3 + 4 = 10
+		//Tip: Gebruik een for-loop.
+	public static void main(String[] args){
+		int getallen[]= {1, 2, 3, 4}; 
+		System.out.println(getallen);
+	}
+}

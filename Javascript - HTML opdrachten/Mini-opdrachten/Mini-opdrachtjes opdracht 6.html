@@ -1,0 +1,71 @@
+<script>
+     //Maak een afbeelding zichtbaar in je scherm.Maak een knop. Als ik op de knop klik, verandert de afbeelding naar een nieuwe afbeelding. 
+    //https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb
+       
+       
+var count1 = 0;
+function deFunctie(){ 
+    count1++;
+    console.log(count1);
+    if (count1==1){
+    document.getElementById('myImage').src= 'plaatje2.jpg'
+    }
+    else if (count1==2){
+    document.getElementById('myImage').src ='plaatje1.jpg'
+    count1=0;
+    } 
+;
+}
+</script>
+
+
+
+<script>
+//ADVANCED: Klik door vier seizoenen heen. Plaatje van de Zomer, Herfst, Winter, Lente. Na iedere winter is er 1 jaar voorbij. In de div staat na 13 keer klikken. Er zijn 3 jaren voorbij.    
+var count2 = 0; 
+var jaar2= 0; 
+function deFunctie2(){ 
+    count2++ 
+    console.log(count2);
+    
+    if (count2 == 1){
+        document.getElementById('Seizoenen').src = 'winter.jpg'
+        
+    }
+    else if (count2 == 2){
+        document.getElementById('Seizoenen').src = 'lente.jpg'   
+        
+    }
+    else if (count2 == 3){ 
+        document.getElementById('Seizoenen').src = 'zomer.jpg'
+        
+    }
+    else if(count2 ==4){ 
+        document.getElementById('Seizoenen').src = 'herfst.jpg'
+        count2=0;
+        jaar2++
+        console.log(jaar2)
+    }
+     
+
+   if (jaar2>=1){
+       document.getElementById('div1').innerHTML = "Er zijn " + jaar2  + " jaren voorbij";
+
+   }
+}
+
+</script>
+
+
+
+<img id="myImage" src="plaatje1.jpg" width="300" height="300">
+<br>
+<input type="button" id="Knop" value="Afbeeldingbutton" onclick ="deFunctie()">
+<br>
+<img id="Seizoenen" src="zomer.jpg" width = "300" height= "300">
+<br>
+<input type="button" id="Knop" value="Seizoenbutton" onclick ="deFunctie2()">
+<div id= div1> </div>
+
+
+

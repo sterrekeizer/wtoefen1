@@ -1,0 +1,28 @@
+<script> 
+// Mini Opdracht 1 
+
+ 
+// Invoerveld iets intypen
+
+function deFunctie(){
+  var antwoord = document.getElementById("invoerveld").value; //Maak variabele met output invoerveld
+   if (antwoord==="hallo"){
+   alert("Welkom");
+   }
+   else if (antwoord==="doei"){
+    alert("Tot de volgende keer");
+   }
+   else {
+
+   }
+
+}
+</script>
+<!-- Maak invoerveld -->
+<h3>Hallo!</h3>
+<label for="invoerveld">Antwoord:</label>
+<input type="text" id="invoerveld" name="name"> 
+<!-- Maak knop -->
+<input type="button" id= "knop" value="Verder" onclick="deFunctie()">
+
+<!--<div id ="uitkomst">uitkomst</div>-->

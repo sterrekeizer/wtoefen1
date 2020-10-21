@@ -1,0 +1,22 @@
+
+public class MiniOpdracht2 {
+	public static void main(String[] args){
+		// HOEVEEL E'S?
+		//Tel het aantal keer dat de letter "e" in een gegeven string voorkomt.
+		//Voorbeeld: "regenen" heeft 3 keer de letter "e".
+		//Tip!: gebruik de methode charAt(int index) icm een for-loop.
+		
+		String naam = "Sterre";
+		
+		int counter = 0; 
+		
+		for (int i=0; i <= naam.length() ; i++) {
+			if (naam.charAt(i) == 'e'); {
+				counter++;
+				System.out.println(counter);
+			}
+		}
+		System.out.println(naam + " heeft " + counter + " keer de e in haar naam");
+		}
+
+}
